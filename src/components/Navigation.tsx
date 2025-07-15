@@ -13,8 +13,6 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, setActiveTab }) => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About Us' },
     { id: 'catalog', label: 'Fabric Catalog' },
-    { id: 'classes', label: 'Classes & Events' },
-    { id: 'gallery', label: 'Gallery' },
     { id: 'contact', label: 'Contact' },
   ];
 

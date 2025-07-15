@@ -81,48 +81,28 @@ const About: React.FC = () => {
           <h2 className="text-4xl font-playfair font-bold text-warm-brown-800 mb-12">
             Meet Our Team
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Margaret Thompson",
-                role: "Founder & Master Quilter",
-                image: "https://images.pexels.com/photos/3768911/pexels-photo-3768911.jpeg?auto=compress&cs=tinysrgb&w=400",
-                bio: "With over 50 years of quilting experience, Margaret's passion for the craft shines through in every piece she creates."
-              },
-              {
-                name: "Sarah Johnson",
-                role: "Shop Manager & Instructor",
-                image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400",
-                bio: "Sarah brings modern techniques to traditional quilting, helping bridge the gap between classic and contemporary styles."
-              },
-              {
-                name: "Emma Wilson",
-                role: "Design Specialist",
-                image: "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400",
-                bio: "Emma's fresh perspective and digital design skills help customers visualize their quilting projects before they begin."
-              }
-            ].map((member, index) => (
-              <div key={index} className="text-center">
-                <div className="relative mb-6">
-                  <div className="w-48 h-48 mx-auto stitched-border-thick rounded-full overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center">
+              <div className="relative mb-6">
+                <div className="w-64 h-64 mx-auto stitched-border-thick rounded-full overflow-hidden">
+                  <img 
+                    src="https://images.pexels.com/photos/3768911/pexels-photo-3768911.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                    alt="Carol Brown"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-playfair font-semibold text-warm-brown-800 mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-coral-600 font-open-sans font-medium mb-4">
-                  {member.role}
-                </p>
-                <p className="font-open-sans text-warm-brown-600 text-sm">
-                  {member.bio}
-                </p>
               </div>
-            ))}
+              <h3 className="text-2xl font-playfair font-semibold text-warm-brown-800 mb-2">
+                Carol Brown
+              </h3>
+              <p className="text-coral-600 font-open-sans font-medium mb-4 text-lg">
+                Owner & Master Quilter
+              </p>
+              <p className="font-open-sans text-warm-brown-600 text-lg leading-relaxed">
+                With over 35 years of quilting experience, Carol's passion for the craft shines through in every piece she creates. 
+                Her dedication to quality and community has made Goldiebees the heart of our quilting community.
+              </p>
+            </div>
           </div>
         </div>
 

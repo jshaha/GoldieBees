@@ -4,9 +4,7 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import About from './components/About';
 import FabricCatalog from './components/FabricCatalog';
-import Classes from './components/Classes';
 import Contact from './components/Contact';
-import Gallery from './components/Gallery';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -19,12 +17,8 @@ function App() {
         return <About />;
       case 'catalog':
         return <FabricCatalog />;
-      case 'classes':
-        return <Classes />;
       case 'contact':
         return <Contact />;
-      case 'gallery':
-        return <Gallery />;
       default:
         return <Home />;
     }
